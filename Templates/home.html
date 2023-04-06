@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flower Classifier</title>
+    <style>
+      body {
+        background-image: url("flower-background.jpg");
+        background-size: cover;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 50px;
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center; /* Added to center text */
+      }
+      h1 {
+        font-size: 48px;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+      form {
+        text-align: center;
+      }
+      input[type="submit"] {
+        font-size: 24px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Flower Classifier</h1>
+      <p>
+        Welcome to the Flower Classifier app. Upload an image of a flower to the system.
+        The system will analyze the image using machine learning algorithms and predict the flower species.
+        Information about the predicted flower species will be displayed, including additional information about the flower and the accuracy of the prediction.
+      </p>
+      <form action="/predict" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <br><br>
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location">
+        <br><br>
+        <label for="share_results">Share my results:</label>
+        <input type="checkbox" name="share_results" id="share_results" value="yes">
+        <br><br>
+        <input type="submit" value="Predict">
+      </form>
+      <p>
+        <strong>Instructions:</strong>
+        <br>
+        Click on the "Upload" button to select an image of a flower.
+        <br>
+        Once you have selected the image, click on the "Submit" button to upload it to the system.
+        <br>
+        The system will process the image and display the predicted flower species along with additional information about the flower and the accuracy of the prediction.
+      </p>
+      <p>
+        <strong>Acceptable Filetypes:</strong>
+        <br>
+        The system accepts the following image file types: PNG, JPG, and JPEG.
+      </p>
+      <p>
+        <strong>Sharing Results:</strong>
+        <br>
+        Sharing your results helps us with conservation efforts to help wildflowers and tracking their progression.
+      </p>
+      <p>
+        <strong>Note:</strong>
+        <br>
+        For best results, please ensure that the image is of a flower and is clear and focused.
+      </p>
+    </div>
+  </body>
+</html>
