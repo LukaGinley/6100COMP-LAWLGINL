@@ -1,35 +1,50 @@
 Wildflower Image Recognition
 
-Wildflower Image Recognition is a machine learning application that helps identify wildflowers based on images. This project uses deep learning models to predict the species of wildflowers based on a user-provided image.
+Table of Contents 
+-	Installation
+-	Usage 
+-	Technologies Used
 
-Installation
+Installation 
+To use this project please ensure all the following libraries are installed within your python environment:
+-	Python 3.8
+-	Flask
+-	OS
+-	TensorFlow
+-	Numpy
+-	PIL
+-	BeautifulSoup
+-	Matplotlib.pyplot
+-	Sklearn.model_selection
+Please also ensure that you have downloaded and imported the model which can be found/downloaded from the notebook document. The file is named: “FlowerModel.h5”. 
 
-This project is built with Python 3.8 and requires the following packages:
-- tensorflow==2.6.0
-- numpy==1.19.5
-- matplotlib==3.4.3
+Usage 
+To use this artefact please ensure that the model is imported properly in the local directory along with other accompanying files such as templates and python files. After this is done, please run the python file and check the terminal for the IP of the local server. Once opened, start uploading images and enjoy use of the artefact. 
 
-Usage
+Technologies Used 
+The following technologies were used in the development of this machine learning application:
+-	Python: The programming language used to build the application.
 
-To use this application, run the app.py file:
-python app.py
+-	TensorFlow: An open-source software library for dataflow and differentiable programming across a range of tasks, including machine learning and deep learning.
 
-This will start a web server on your local machine. Open your web browser and go to http://localhost:5000 to access the application.
+-	Numpy: A library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
 
-To identify a wildflower, upload an image of the flower to the application. The application will use a deep learning model to predict the species of the wildflower.
+-	Matplotlib: A plotting library for the Python programming language and its numerical mathematics extension NumPy.
 
-Model
+-	Scikit-learn: A machine learning library for the Python programming language that provides simple and efficient tools for data mining and data analysis.
 
-This project uses a convolutional neural network (CNN) to classify wildflowers. The model was trained on a dataset of 10,000 images of wildflowers from around the world. The dataset contains images of 102 different species of wildflowers.
+-	Flask: A web framework for Python that is used for building web applications.
 
-The model was trained using TensorFlow 2.6.0 on an Nvidia GeForce RTX 3090 GPU. The model achieved an accuracy of 97% on the test set.
+-	Pillow: A library for the Python programming language that adds support for opening, manipulating, and saving many different images file formats.
 
-1. Run FlowerRecognitionApp.py
-2. Follow URL to access web browser portal 
-3. Start uploading Images 
+-	BeautifulSoup: A library for the Python programming language that is used for web scraping purposes.
 
-4. Possibly run the model in order to save it 
+-	Requests: A library for the Python programming language that is used for making HTTP requests in Python.
 
-Add more to the read me, how it works, what's its purpose 
-details about how it can be evolved or tweaked
-Title, description etc. 
+-	os: A module in the Python standard library that provides a way of using operating system dependent functionality.
+
+-	datetime: A module in the Python standard library that supplies classes for working with dates and times.
+
+-	HTML/CSS: Used for building the front-end of the web application.
+
+Additionally, the Convolutional Neural Network (CNN) architecture was used for building the machine learning model for this application. The model was trained on a dataset of 4,242 images of flowers from around the world. The dataset contains images of 5 different species of flowers. Finally, the model achieved an accuracy of 97% on the test set.
